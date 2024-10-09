@@ -1,0 +1,77 @@
+# 开发环境配置
+server:
+  # 服务器的HTTP端口，默认为8296
+  port: 8296
+
+spring:
+  profiles:
+    active: common, dev
+  application:
+    name: app
+
+swagger:
+  groups:
+    system:
+      groupName: 聚合
+      basePackage: com.zhenshu.reward.app
+      pathMapping: /
+      terms-of-service-url: http://localhost:8296/api/dev/reward-hub/app
+      title: 聚合
+      description: 聚合
+      license: Powered By ZS
+    point:
+      groupName: 营销中心
+      basePackage: com.zhenshu.reward.point
+      pathMapping: /
+      terms-of-service-url: http://localhost:8296/api/dev/reward-hub/app
+      title: 营销中心
+      description: 营销中心
+      license: Powered By ZS
+    game:
+      groupName: 营销玩法
+      basePackage: com.zhenshu.reward.game
+      pathMapping: /
+      terms-of-service-url: http://localhost:8296/api/dev/reward-hub/app
+      title: 营销玩法
+      description: 营销玩法
+      license: Powered By ZS
+    activity:
+      groupName: 活动
+      basePackage: com.zhenshu.reward.activity.web
+      pathMapping: /
+      terms-of-service-url: http://localhost:8296/api/dev/reward-hub/app
+      title: 活动
+      description: 活动
+      license: Powered By ZS
+    forum:
+      groupName: 论坛
+      basePackage: com.zhenshu.reward.forum.app.controller
+      pathMapping: /
+      terms-of-service-url: http://localhost:8296/api/dev/reward-hub/app
+      title: 论坛
+      description: 论坛
+      license: Powered By ZS
+    surveys:
+      groupName: 问卷调查
+      basePackage: com.zhenshu.reward.surveys.app.web
+      pathMapping: /
+      terms-of-service-url: http://localhost:8296/api/dev/reward-hub/app
+      title: 问卷调查
+      description: 问卷调查
+      license: Powered By ZS
+    wecharRun:
+      groupName: 微信运动
+      basePackage: com.zhenshu.reward.game.run.app.web
+      pathMapping: /
+      terms-of-service-url: http://localhost:8296/api/dev/reward-hub/app
+      title: 微信运动
+      description: 微信运动
+      license: Powered By ZS
+    lottery:
+      groupName: 抽奖
+      basePackage: com.zhenshu.reward.point.lottery.app.web
+      pathMapping: /
+      terms-of-service-url: http://localhost:8296/api/dev/reward-hub/admin
+      title: 抽奖
+      description: 抽奖
+      license: Powered By ZS

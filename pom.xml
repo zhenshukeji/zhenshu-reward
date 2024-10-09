@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zhenshu.reward</groupId>
+    <artifactId>reward-hub</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>rw-common</module>
+        <module>rw-points-game</module>
+        <module>rw-points</module>
+        <module>rw-admin</module>
+        <module>rw-app</module>
+    </modules>
+
+    <properties>
+        <rw.version>1.0-SNAPSHOT</rw.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+        <druid.version>1.2.11</druid.version>
+        <bitwalker.version>1.21</bitwalker.version>
+        <swagger.version>3.0.0</swagger.version>
+        <kaptcha.version>2.3.2</kaptcha.version>
+        <mybatis-plus.version>3.4.2</mybatis-plus.version>
+        <pagehelper.boot.version>1.4.3</pagehelper.boot.version>
+        <fastjson.version>2.0.9</fastjson.version>
+        <oshi.version>6.2.1</oshi.version>
+        <commons.io.version>2.11.0</commons.io.version>
+        <commons.fileupload.version>1.4</commons.fileupload.version>
+        <commons.collections.version>3.2.2</commons.collections.version>
+        <poi.version>4.1.2</poi.version>
+        <velocity.version>2.3</velocity.version>
+        <jwt.version>0.9.1</jwt.version>
+        <redisson.version>3.13.6</redisson.version>
+        <knife4j.version>3.0.3</knife4j.version>
+        <aliyun-oss.version>2.5.0</aliyun-oss.version>
+        <hutool-all.version>5.7.10</hutool-all.version>
+        <aliyun-sms.version>4.1.1</aliyun-sms.version>
+        <weixin-java.version>4.2.0</weixin-java.version>
+        <jedis-lock-version>1.0.0</jedis-lock-version>
+        <redisson.version>3.17.0</redisson.version>
+        <kuaidi100-skd.version>1.0.11</kuaidi100-skd.version>
+    </properties>
+
+    <!-- 依赖声明 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- SpringBoot的依赖配置-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.5.14</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- 阿里数据库连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!-- 解析客户端操作系统、浏览器等 -->
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${bitwalker.version}</version>
+            </dependency>
+
+            <!-- pagehelper 分页插件 -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.boot.version}</version>
+            </dependency>
+
+            <!-- 获取系统信息 -->
+            <dependency>
+                <groupId>com.github.oshi</groupId>
+                <artifactId>oshi-core</artifactId>
+                <version>${oshi.version}</version>
+            </dependency>
+
+            <!-- Swagger3依赖 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${swagger.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.swagger</groupId>
+                        <artifactId>swagger-models</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- io常用工具类 -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.io.version}</version>
+            </dependency>
+
+            <!-- 文件上传工具类 -->
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${commons.fileupload.version}</version>
+            </dependency>
+
+            <!-- excel工具 -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+
+            <!-- velocity代码生成使用模板 -->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${velocity.version}</version>
+            </dependency>
+
+            <!-- collections工具类 -->
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons.collections.version}</version>
+            </dependency>
+
+            <!-- 阿里JSON解析器 -->
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <!-- Token生成与解析-->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jwt.version}</version>
+            </dependency>
+
+            <!-- 验证码 -->
+            <dependency>
+                <groupId>com.github.penggle</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>${kaptcha.version}</version>
+            </dependency>
+
+            <!-- 系统模块-->
+            <dependency>
+                <groupId>com.zhenshu.reward</groupId>
+                <artifactId>rw-admin</artifactId>
+                <version>${rw.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zhenshu.reward</groupId>
+                <artifactId>rw-app</artifactId>
+                <version>${rw.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zhenshu.reward</groupId>
+                <artifactId>rw-common</artifactId>
+                <version>${rw.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zhenshu.reward</groupId>
+                <artifactId>rw-points</artifactId>
+                <version>${rw.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zhenshu.reward</groupId>
+                <artifactId>rw-points-game</artifactId>
+                <version>${rw.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zhenshu.reward</groupId>
+                <artifactId>rw-activity</artifactId>
+                <version>${rw.version}</version>
+            </dependency>
+
+            <!-- redis 分布式锁，超时时间自动续期的看门狗，包括锁的超时功能 -->
+            <!-- 教程博客：https://www.cnblogs.com/cjsblog/p/11273205.html -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+
+            <!-- knife4j -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
+            <!--aliyun sdk用于实现文件上传cdn -->
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${aliyun-oss.version}</version>
+            </dependency>
+
+            <!-- mybatis-plus 增强CRUD -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!--阿里云短信验证码-->
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>${aliyun-sms.version}</version>
+            </dependency>
+
+            <!--微信小程序-->
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-miniapp</artifactId>
+                <version>${weixin-java.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.jedis-lock</groupId>
+                <artifactId>jedis-lock</artifactId>
+                <version>${jedis-lock-version}</version>
+            </dependency>
+
+            <!-- Spring Data Redis 底层使用 Redisson 作为客户端 -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.kuaidi100-api</groupId>
+                <artifactId>sdk</artifactId>
+                <version>${kuaidi100-skd.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+</project>
