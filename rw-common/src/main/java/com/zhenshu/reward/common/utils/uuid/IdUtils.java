@@ -6,7 +6,7 @@ import com.zhenshu.reward.common.utils.DateUtils;
 /**
  * ID生成器工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class IdUtils {
     /**

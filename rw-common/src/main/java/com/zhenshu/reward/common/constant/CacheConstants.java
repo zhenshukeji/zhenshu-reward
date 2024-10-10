@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 /**
  * 缓存的key 常量
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Component
 public class CacheConstants

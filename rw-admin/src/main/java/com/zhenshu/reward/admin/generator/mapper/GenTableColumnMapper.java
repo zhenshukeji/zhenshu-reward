@@ -7,7 +7,7 @@ import com.zhenshu.reward.admin.generator.domain.GenTableColumn;
 /**
  * 业务字段 数据层
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public interface GenTableColumnMapper
 {

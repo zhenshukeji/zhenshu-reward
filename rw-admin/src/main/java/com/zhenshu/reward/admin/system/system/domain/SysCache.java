@@ -5,7 +5,7 @@ import com.zhenshu.reward.common.utils.StringUtils;
 /**
  * 缓存信息
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class SysCache
 {

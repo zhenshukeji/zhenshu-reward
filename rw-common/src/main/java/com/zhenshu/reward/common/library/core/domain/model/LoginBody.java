@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonAlias;
 /**
  * 用户登录对象
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class LoginBody
 {

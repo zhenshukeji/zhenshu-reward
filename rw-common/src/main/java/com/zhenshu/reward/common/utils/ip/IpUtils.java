@@ -11,7 +11,7 @@ import java.net.UnknownHostException;
 /**
  * 获取IP方法
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class IpUtils {
     private static final String UNKNOWN = "unknown";

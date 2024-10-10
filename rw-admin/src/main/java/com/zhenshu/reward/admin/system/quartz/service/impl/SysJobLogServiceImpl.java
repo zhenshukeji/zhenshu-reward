@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 /**
  * 定时任务调度日志信息 服务层
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Service
 public class SysJobLogServiceImpl implements ISysJobLogService

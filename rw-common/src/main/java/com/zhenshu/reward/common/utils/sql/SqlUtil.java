@@ -6,7 +6,7 @@ import com.zhenshu.reward.common.utils.StringUtils;
 /**
  * sql操作工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class SqlUtil
 {

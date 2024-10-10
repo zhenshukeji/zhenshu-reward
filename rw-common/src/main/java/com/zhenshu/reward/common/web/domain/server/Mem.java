@@ -5,7 +5,7 @@ import com.zhenshu.reward.common.utils.Arith;
 /**
  * 內存相关信息
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class Mem
 {

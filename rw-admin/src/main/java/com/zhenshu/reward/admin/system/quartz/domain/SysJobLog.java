@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * 定时任务调度日志表 sys_job_log
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

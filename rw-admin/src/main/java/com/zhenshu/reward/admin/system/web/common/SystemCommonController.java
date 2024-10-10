@@ -3,7 +3,7 @@ package com.zhenshu.reward.admin.system.web.common;
 import com.zhenshu.reward.common.config.web.ServerConfig;
 import com.zhenshu.reward.common.constant.Constants;
 import com.zhenshu.reward.common.library.core.domain.AjaxResult;
-import com.zhenshu.reward.common.config.properties.RuoYiConfig;
+import com.zhenshu.reward.common.config.properties.zhenshuConfig;
 import com.zhenshu.reward.common.utils.StringUtils;
 import com.zhenshu.reward.common.utils.file.FileUploadUtils;
 import com.zhenshu.reward.common.utils.file.FileUtils;
@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * 通用请求处理
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @RestController
 @RequestMapping("/common")
@@ -50,7 +50,7 @@ public class SystemCommonController {
                 throw new Exception(StringUtils.format("文件名称({})非法，不允许下载。 ", fileName));
             }
             String realFileName = System.currentTimeMillis() + fileName.substring(fileName.indexOf("_") + 1);
-            String filePath = RuoYiConfig.getDownloadPath() + fileName;
+            String filePath = zhenshuConfig.getDownloadPath() + fileName;
 
             response.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
             FileUtils.setAttachmentResponseHeader(response, realFileName);
@@ -70,7 +70,7 @@ public class SystemCommonController {
     public AjaxResult uploadFiles(List<MultipartFile> files) throws Exception {
         try {
             // 上传文件路径
-            String filePath = RuoYiConfig.getUploadPath();
+            String filePath = zhenshuConfig.getUploadPath();
             List<String> urls = new ArrayList<String>();
             List<String> fileNames = new ArrayList<String>();
             List<String> newFileNames = new ArrayList<String>();
@@ -105,7 +105,7 @@ public class SystemCommonController {
                 throw new Exception(StringUtils.format("资源文件({})非法，不允许下载。 ", resource));
             }
             // 本地资源路径
-            String localPath = RuoYiConfig.getProfile();
+            String localPath = zhenshuConfig.getProfile();
             // 数据库资源地址
             String downloadPath = localPath + StringUtils.substringAfter(resource, Constants.RESOURCE_PREFIX);
             // 下载名称

@@ -8,7 +8,7 @@ import org.apache.velocity.app.Velocity;
 /**
  * VelocityEngine工厂
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class VelocityInitializer
 {

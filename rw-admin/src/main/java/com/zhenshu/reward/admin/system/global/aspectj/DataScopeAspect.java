@@ -19,7 +19,7 @@ import java.util.List;
  * 数据过滤处理
  * 实际不生效, 所有Mapper.xml文件中的${params.dataScope}都不生效, 全部可以删除
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Aspect
 //@Component

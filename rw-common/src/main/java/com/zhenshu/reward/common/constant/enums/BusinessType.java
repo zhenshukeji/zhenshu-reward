@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant.enums;
 /**
  * 业务操作类型
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public enum BusinessType
 {

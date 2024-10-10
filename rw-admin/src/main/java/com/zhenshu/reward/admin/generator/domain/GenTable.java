@@ -12,7 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * 业务表 gen_table
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class GenTable extends BaseEntity
 {

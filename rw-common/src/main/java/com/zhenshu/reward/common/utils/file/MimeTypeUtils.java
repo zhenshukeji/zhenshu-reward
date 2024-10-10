@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.utils.file;
 /**
  * 媒体类型工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class MimeTypeUtils
 {

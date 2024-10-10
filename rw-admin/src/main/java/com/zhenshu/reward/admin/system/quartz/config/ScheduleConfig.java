@@ -10,7 +10,7 @@ import java.util.Properties;
 /**
  * 定时任务配置（单机部署建议删除此类和qrtz数据库表，默认走内存会最高效）
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Configuration
 public class ScheduleConfig {
@@ -22,7 +22,7 @@ public class ScheduleConfig {
         // quartz参数
         Properties prop = new Properties();
         // 实例名称, 相同应用的的实例名称应该一样
-        prop.put("org.quartz.scheduler.instanceName", "RuoyiScheduler");
+        prop.put("org.quartz.scheduler.instanceName", "zhenshuScheduler");
         // 实例id
         prop.put("org.quartz.scheduler.instanceId", "AUTO");
         // 实例id自动生成策列
@@ -45,7 +45,7 @@ public class ScheduleConfig {
         prop.put("org.quartz.jobStore.tablePrefix", "QRTZ_");
         factory.setQuartzProperties(prop);
 
-        factory.setSchedulerName("RuoyiScheduler");
+        factory.setSchedulerName("zhenshuScheduler");
         // 延时启动
         factory.setStartupDelay(1);
         factory.setApplicationContextSchedulerContextKey("applicationContextKey");

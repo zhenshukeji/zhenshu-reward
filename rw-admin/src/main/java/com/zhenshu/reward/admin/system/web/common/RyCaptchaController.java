@@ -5,7 +5,7 @@ import com.zhenshu.reward.admin.system.system.service.ISysConfigService;
 import com.zhenshu.reward.common.config.captcha.CaptchaConfig;
 import com.zhenshu.reward.common.constant.Constants;
 import com.zhenshu.reward.common.library.core.domain.AjaxResult;
-import com.zhenshu.reward.common.config.properties.RuoYiConfig;
+import com.zhenshu.reward.common.config.properties.zhenshuConfig;
 import com.zhenshu.reward.common.utils.sign.Base64;
 import com.zhenshu.reward.common.utils.uuid.IdUtils;
 import com.zhenshu.reward.common.constant.CacheConstants;
@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 验证码操作处理
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @RestController
 public class RyCaptchaController
@@ -66,7 +66,7 @@ public class RyCaptchaController
         BufferedImage image = null;
 
         // 生成验证码
-        String captchaType = RuoYiConfig.getCaptchaType();
+        String captchaType = zhenshuConfig.getCaptchaType();
         if ("math".equals(captchaType))
         {
             String capText = captchaProducerMath.createText();

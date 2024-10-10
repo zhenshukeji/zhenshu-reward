@@ -6,7 +6,7 @@ import com.zhenshu.reward.admin.system.quartz.domain.SysJobLog;
 /**
  * 调度任务日志信息 数据层
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public interface SysJobLogMapper
 {

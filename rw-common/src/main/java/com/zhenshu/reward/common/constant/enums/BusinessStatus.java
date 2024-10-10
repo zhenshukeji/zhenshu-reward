@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant.enums;
 /**
  * 操作状态
  *
- * @author ruoyi
+ * @author zhenshu
  *
  */
 public enum BusinessStatus

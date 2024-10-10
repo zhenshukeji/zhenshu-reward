@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.web.domain.server;
 /**
  * 系统相关信息
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class Sys
 {

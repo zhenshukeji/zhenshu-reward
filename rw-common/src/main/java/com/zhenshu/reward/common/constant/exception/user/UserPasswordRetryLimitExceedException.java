@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant.exception.user;
 /**
  * 用户错误最大次数异常类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class UserPasswordRetryLimitExceedException extends UserException
 {

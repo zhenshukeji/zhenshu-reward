@@ -1,6 +1,6 @@
 package com.zhenshu.reward.common.utils.file;
 
-import com.zhenshu.reward.common.config.properties.RuoYiConfig;
+import com.zhenshu.reward.common.config.properties.zhenshuConfig;
 import com.zhenshu.reward.common.utils.DateUtils;
 import com.zhenshu.reward.common.utils.StringUtils;
 import com.zhenshu.reward.common.utils.uuid.IdUtils;
@@ -17,7 +17,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * 文件处理工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class FileUtils
 {
@@ -68,7 +68,7 @@ public class FileUtils
      */
     public static String writeImportBytes(byte[] data) throws IOException
     {
-        return writeBytes(data, RuoYiConfig.getImportPath());
+        return writeBytes(data, zhenshuConfig.getImportPath());
     }
 
     /**
@@ -252,7 +252,7 @@ public class FileUtils
     }
 
     /**
-     * 获取文件名称 /profile/upload/2022/04/16/ruoyi.png -- ruoyi.png
+     * 获取文件名称 /profile/upload/2022/04/16/zhenshu.png -- zhenshu.png
      *
      * @param fileName 路径名称
      * @return 没有文件路径的名称
@@ -270,7 +270,7 @@ public class FileUtils
     }
 
     /**
-     * 获取不带后缀文件名称 /profile/upload/2022/04/16/ruoyi.png -- ruoyi
+     * 获取不带后缀文件名称 /profile/upload/2022/04/16/zhenshu.png -- zhenshu
      *
      * @param fileName 路径名称
      * @return 没有文件路径和后缀的名称

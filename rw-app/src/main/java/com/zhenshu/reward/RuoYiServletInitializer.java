@@ -6,9 +6,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 /**
  * web容器中进行部署
  *
- * @author ruoyi
+ * @author zhenshu
  */
-public class RuoYiServletInitializer extends SpringBootServletInitializer
+public class zhenshuServletInitializer extends SpringBootServletInitializer
 {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application)

@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 /**
  * 读取项目相关配置
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Component
-@ConfigurationProperties(prefix = "ruoyi")
-public class RuoYiConfig
+@ConfigurationProperties(prefix = "zhenshu")
+public class zhenshuConfig
 {
     /** 项目名称 */
     private String name;
@@ -80,7 +80,7 @@ public class RuoYiConfig
 
     public void setProfile(String profile)
     {
-        RuoYiConfig.profile = profile;
+        zhenshuConfig.profile = profile;
     }
 
     public static boolean isAddressEnabled()
@@ -90,7 +90,7 @@ public class RuoYiConfig
 
     public void setAddressEnabled(boolean addressEnabled)
     {
-        RuoYiConfig.addressEnabled = addressEnabled;
+        zhenshuConfig.addressEnabled = addressEnabled;
     }
 
     public static String getCaptchaType() {
@@ -98,7 +98,7 @@ public class RuoYiConfig
     }
 
     public void setCaptchaType(String captchaType) {
-        RuoYiConfig.captchaType = captchaType;
+        zhenshuConfig.captchaType = captchaType;
     }
 
     /**

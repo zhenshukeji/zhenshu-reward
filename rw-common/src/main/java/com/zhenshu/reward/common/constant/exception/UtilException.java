@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant.exception;
 /**
  * 工具类异常
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class UtilException extends RuntimeException
 {

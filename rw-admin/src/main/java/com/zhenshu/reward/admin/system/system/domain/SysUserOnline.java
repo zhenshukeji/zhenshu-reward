@@ -3,7 +3,7 @@ package com.zhenshu.reward.admin.system.system.domain;
 /**
  * 当前在线会话
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class SysUserOnline
 {

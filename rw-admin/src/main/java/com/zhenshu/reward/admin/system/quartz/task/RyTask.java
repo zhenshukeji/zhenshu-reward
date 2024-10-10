@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 /**
  * 定时任务调度测试
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Component("ryTask")
 public class RyTask {

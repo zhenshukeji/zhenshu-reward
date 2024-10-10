@@ -10,7 +10,7 @@ import org.springframework.context.annotation.FilterType;
 /**
  * 启动程序
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @ComponentScan(
         excludeFilters = {

@@ -21,7 +21,7 @@ import java.util.Properties;
 /**
  * 服务器相关信息
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class Server
 {

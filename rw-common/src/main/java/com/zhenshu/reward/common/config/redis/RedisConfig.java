@@ -24,7 +24,7 @@ import java.text.SimpleDateFormat;
 /**
  * redis配置
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Configuration
 @EnableCaching //开启注解

@@ -8,7 +8,7 @@ import java.text.MessageFormat;
 /**
  * 业务异常
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Getter
 public class ServiceException extends RuntimeException {

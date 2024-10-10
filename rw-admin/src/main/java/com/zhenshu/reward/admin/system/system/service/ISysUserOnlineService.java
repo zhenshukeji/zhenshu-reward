@@ -6,7 +6,7 @@ import com.zhenshu.reward.admin.system.system.domain.SysUserOnline;
 /**
  * 在线用户 服务层
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public interface ISysUserOnlineService
 {

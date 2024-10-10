@@ -5,7 +5,7 @@ import com.zhenshu.reward.common.constant.exception.base.BaseException;
 /**
  * 文件信息异常类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class FileException extends BaseException
 {

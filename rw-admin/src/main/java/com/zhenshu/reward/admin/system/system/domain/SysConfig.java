@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 /**
  * 参数配置表 sys_config
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class SysConfig extends BaseEntity
 {

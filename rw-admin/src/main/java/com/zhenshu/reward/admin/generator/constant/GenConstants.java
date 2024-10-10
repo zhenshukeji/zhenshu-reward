@@ -3,7 +3,7 @@ package com.zhenshu.reward.admin.generator.constant;
 /**
  * 代码生成通用常量
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class GenConstants
 {

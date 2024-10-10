@@ -8,7 +8,7 @@ import com.zhenshu.reward.common.library.core.page.TableSupport;
 /**
  * 分页工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class PageUtils extends PageHelper {
     /**

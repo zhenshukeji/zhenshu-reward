@@ -1,7 +1,7 @@
 package com.zhenshu.reward.common.utils.file;
 
 import com.zhenshu.reward.common.constant.Constants;
-import com.zhenshu.reward.common.config.properties.RuoYiConfig;
+import com.zhenshu.reward.common.config.properties.zhenshuConfig;
 import com.zhenshu.reward.common.utils.StringUtils;
 import org.apache.poi.util.IOUtils;
 import org.slf4j.Logger;
@@ -17,7 +17,7 @@ import java.util.Arrays;
 /**
  * 图片处理工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class ImageUtils
 {
@@ -80,7 +80,7 @@ public class ImageUtils
             else
             {
                 // 本机地址
-                String localPath = RuoYiConfig.getProfile();
+                String localPath = zhenshuConfig.getProfile();
                 String downloadPath = localPath + StringUtils.substringAfter(url, Constants.RESOURCE_PREFIX);
                 in = new FileInputStream(downloadPath);
             }

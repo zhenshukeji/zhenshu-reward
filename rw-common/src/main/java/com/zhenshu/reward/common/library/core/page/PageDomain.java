@@ -5,7 +5,7 @@ import com.zhenshu.reward.common.utils.StringUtils;
 /**
  * 分页数据
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class PageDomain
 {

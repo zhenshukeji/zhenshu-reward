@@ -1,5 +1,5 @@
 # 项目相关配置
-ruoyi:
+zhenshu:
   # 名称
   name: ZhenShu-Mall
   # 版本
@@ -8,7 +8,7 @@ ruoyi:
   copyrightYear: 2022
   # 实例演示开关
   demoEnabled: true
-  # 文件路径 示例（ Windows配置D:/ruoyi/uploadPath，Linux配置 /home/ruoyi/uploadPath）
+  # 文件路径 示例（ Windows配置D:/zhenshu/uploadPath，Linux配置 /home/zhenshu/uploadPath）
   profile: ./
   # 获取ip地址开关
   addressEnabled: false

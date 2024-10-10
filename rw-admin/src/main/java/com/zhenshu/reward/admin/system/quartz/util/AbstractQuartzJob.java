@@ -23,7 +23,7 @@ import java.util.Objects;
 /**
  * 抽象quartz调用
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Slf4j
 public abstract class AbstractQuartzJob implements Job {

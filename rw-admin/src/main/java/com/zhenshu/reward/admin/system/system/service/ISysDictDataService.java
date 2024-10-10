@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 字典 业务层
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public interface ISysDictDataService
 {

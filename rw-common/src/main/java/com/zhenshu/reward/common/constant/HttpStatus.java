@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant;
 /**
  * 返回状态码
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class HttpStatus
 {

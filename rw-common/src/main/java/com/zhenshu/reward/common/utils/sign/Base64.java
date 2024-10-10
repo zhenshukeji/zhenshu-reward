@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.utils.sign;
 /**
  * Base64工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public final class Base64
 {

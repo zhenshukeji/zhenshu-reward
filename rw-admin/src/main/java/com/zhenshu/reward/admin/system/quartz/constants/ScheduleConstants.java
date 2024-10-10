@@ -3,7 +3,7 @@ package com.zhenshu.reward.admin.system.quartz.constants;
 /**
  * 任务调度通用常量
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class ScheduleConstants
 {

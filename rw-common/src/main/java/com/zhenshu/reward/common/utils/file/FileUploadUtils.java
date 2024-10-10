@@ -4,7 +4,7 @@ import com.zhenshu.reward.common.constant.Constants;
 import com.zhenshu.reward.common.constant.exception.file.FileNameLengthLimitExceededException;
 import com.zhenshu.reward.common.constant.exception.file.FileSizeLimitExceededException;
 import com.zhenshu.reward.common.constant.exception.file.InvalidExtensionException;
-import com.zhenshu.reward.common.config.properties.RuoYiConfig;
+import com.zhenshu.reward.common.config.properties.zhenshuConfig;
 import com.zhenshu.reward.common.utils.DateUtils;
 import com.zhenshu.reward.common.utils.StringUtils;
 import com.zhenshu.reward.common.utils.uuid.Seq;
@@ -19,7 +19,7 @@ import java.util.Objects;
 /**
  * 文件上传工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class FileUploadUtils
 {
@@ -36,7 +36,7 @@ public class FileUploadUtils
     /**
      * 默认上传的地址
      */
-    private static String defaultBaseDir = RuoYiConfig.getProfile();
+    private static String defaultBaseDir = zhenshuConfig.getProfile();
 
     public static void setDefaultBaseDir(String defaultBaseDir)
     {
@@ -143,7 +143,7 @@ public class FileUploadUtils
 
     public static final String getPathFileName(String uploadDir, String fileName) throws IOException
     {
-        int dirLastIndex = RuoYiConfig.getProfile().length() + 1;
+        int dirLastIndex = zhenshuConfig.getProfile().length() + 1;
         String currentDir = StringUtils.substring(uploadDir, dirLastIndex);
         return Constants.RESOURCE_PREFIX + "/" + currentDir + "/" + fileName;
     }

@@ -21,7 +21,7 @@ import java.util.Map;
 /**
  * 租户端 token 验证处理
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Component
 public class AdminTokenService extends TokenService<LoginUser> {

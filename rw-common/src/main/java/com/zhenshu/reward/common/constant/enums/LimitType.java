@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant.enums;
 /**
  * 限流类型
  *
- * @author ruoyi
+ * @author zhenshu
  */
 
 public enum LimitType

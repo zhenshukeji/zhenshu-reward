@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 通知公告表 数据层
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public interface SysNoticeMapper
 {

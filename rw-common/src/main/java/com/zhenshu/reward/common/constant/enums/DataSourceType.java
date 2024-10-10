@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant.enums;
 /**
  * 数据源
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public enum DataSourceType
 {

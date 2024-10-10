@@ -5,7 +5,7 @@ import cn.hutool.core.convert.Convert;
 import cn.hutool.core.io.FileTypeUtil;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.HexUtil;
-import com.zhenshu.reward.common.config.properties.RuoYiConfig;
+import com.zhenshu.reward.common.config.properties.zhenshuConfig;
 import com.zhenshu.reward.common.constant.Constants;
 import com.zhenshu.reward.common.constant.annotation.Excel;
 import com.zhenshu.reward.common.constant.annotation.Excel.ColumnType;
@@ -64,7 +64,7 @@ import java.util.stream.Collectors;
 /**
  * Excel相关处理
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class ExcelUtil<T> {
     private static final Logger log = LoggerFactory.getLogger(ExcelUtil.class);
@@ -349,7 +349,7 @@ public class ExcelUtil<T> {
                             val = "";
                         } else {
                             byte[] data = image.getData();
-                            val = writeBytes(data, RuoYiConfig.getImportPath());
+                            val = writeBytes(data, zhenshuConfig.getImportPath());
                         }
                     }
                     ReflectUtils.invokeSetter(entity, propertyName, val);
@@ -953,7 +953,7 @@ public class ExcelUtil<T> {
      * @param filename 文件名称
      */
     public String getAbsoluteFile(String filename) {
-        String downloadPath = RuoYiConfig.getDownloadPath() + filename;
+        String downloadPath = zhenshuConfig.getDownloadPath() + filename;
         File desc = new File(downloadPath);
         if (!desc.getParentFile().exists()) {
             desc.getParentFile().mkdirs();

@@ -5,7 +5,7 @@ import com.zhenshu.reward.common.utils.Arith;
 /**
  * CPU相关信息
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class Cpu
 {

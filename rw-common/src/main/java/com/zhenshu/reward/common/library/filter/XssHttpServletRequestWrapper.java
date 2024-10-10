@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * XSS过滤处理
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper
 {

@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.utils.ip;
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONObject;
 import com.zhenshu.reward.common.constant.Constants;
-import com.zhenshu.reward.common.config.properties.RuoYiConfig;
+import com.zhenshu.reward.common.config.properties.zhenshuConfig;
 import com.zhenshu.reward.common.utils.StringUtils;
 import com.zhenshu.reward.common.utils.http.HttpUtils;
 import org.slf4j.Logger;
@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 获取地址类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class AddressUtils
 {
@@ -31,7 +31,7 @@ public class AddressUtils
         {
             return "内网IP";
         }
-        if (RuoYiConfig.isAddressEnabled())
+        if (zhenshuConfig.isAddressEnabled())
         {
             try
             {

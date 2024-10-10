@@ -17,7 +17,7 @@ import java.util.Set;
 /**
  * 全局异常处理器
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @Slf4j
 @RestControllerAdvice

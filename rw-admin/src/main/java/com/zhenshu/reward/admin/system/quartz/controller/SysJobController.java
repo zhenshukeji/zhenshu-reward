@@ -26,7 +26,7 @@ import java.util.List;
 /**
  * 调度任务信息操作处理
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @RestController
 @RequestMapping("/monitor/job")

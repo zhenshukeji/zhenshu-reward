@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant.exception.user;
 /**
  * 验证码错误异常类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class CaptchaException extends UserException
 {

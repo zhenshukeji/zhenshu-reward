@@ -1,6 +1,6 @@
 package com.zhenshu.reward.admin.system.web.system;
 
-import com.zhenshu.reward.common.config.properties.RuoYiConfig;
+import com.zhenshu.reward.common.config.properties.zhenshuConfig;
 import com.zhenshu.reward.common.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 首页
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @RestController
 public class SysIndexController
 {
     /** 系统基础配置 */
     @Autowired
-    private RuoYiConfig ruoyiConfig;
+    private zhenshuConfig zhenshuConfig;
 
     /**
      * 访问首页，提示语
@@ -24,6 +24,6 @@ public class SysIndexController
     @RequestMapping("/")
     public String index()
     {
-        return StringUtils.format("欢迎使用{}后台管理框架，当前版本：v{}，请通过前端地址访问。", ruoyiConfig.getName(), ruoyiConfig.getVersion());
+        return StringUtils.format("欢迎使用{}后台管理框架，当前版本：v{}，请通过前端地址访问。", zhenshuConfig.getName(), zhenshuConfig.getVersion());
     }
 }

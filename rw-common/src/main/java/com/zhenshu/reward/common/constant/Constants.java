@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * 通用常量信息
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class Constants {
     /**

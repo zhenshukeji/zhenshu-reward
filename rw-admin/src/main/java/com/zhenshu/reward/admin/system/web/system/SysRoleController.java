@@ -27,7 +27,7 @@ import java.util.List;
 /**
  * 角色信息
  *
- * @author ruoyi
+ * @author zhenshu
  */
 @RestController
 @RequestMapping("/system/role")

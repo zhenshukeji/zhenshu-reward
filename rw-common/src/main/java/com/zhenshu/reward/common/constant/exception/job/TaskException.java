@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.constant.exception.job;
 /**
  * 计划策略异常
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class TaskException extends Exception
 {

@@ -3,7 +3,7 @@ package com.zhenshu.reward.common.library.core.domain.model;
 /**
  * 用户注册对象
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class RegisterBody extends LoginBody
 {

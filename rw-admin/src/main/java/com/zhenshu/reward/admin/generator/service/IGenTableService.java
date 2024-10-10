@@ -7,7 +7,7 @@ import com.zhenshu.reward.admin.generator.domain.GenTable;
 /**
  * 业务 服务层
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public interface IGenTableService
 {

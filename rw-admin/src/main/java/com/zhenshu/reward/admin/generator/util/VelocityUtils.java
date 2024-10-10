@@ -17,7 +17,7 @@ import com.zhenshu.reward.admin.generator.constant.GenConstants;
 /**
  * 模板处理工具类
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class VelocityUtils
 {

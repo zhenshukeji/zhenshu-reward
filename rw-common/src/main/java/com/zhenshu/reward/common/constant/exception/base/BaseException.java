@@ -6,7 +6,7 @@ import com.zhenshu.reward.common.utils.StringUtils;
 /**
  * 基础异常
  *
- * @author ruoyi
+ * @author zhenshu
  */
 public class BaseException extends RuntimeException
 {
