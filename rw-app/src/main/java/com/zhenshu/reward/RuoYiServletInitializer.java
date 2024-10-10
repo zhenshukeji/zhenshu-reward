@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  *
  * @author zhenshu
  */
-public class zhenshuServletInitializer extends SpringBootServletInitializer
+public class RuoYiServletInitializer extends SpringBootServletInitializer
 {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application)

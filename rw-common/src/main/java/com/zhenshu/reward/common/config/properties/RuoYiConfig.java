@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @ConfigurationProperties(prefix = "zhenshu")
-public class zhenshuConfig
+public class RuoYiConfig
 {
     /** 项目名称 */
     private String name;
