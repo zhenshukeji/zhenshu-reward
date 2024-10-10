@@ -118,8 +118,8 @@ spring:
       # 配置监控页功能
       stat-view-servlet:
         enabled: true
-        login-username: xmeta
-        login-password: 20220429xmeta!
+        login-username: admin
+        login-password: admin
         resetEnable: false
 
 # MyBatis Plus配置
@@ -159,7 +159,7 @@ knife4j:
     # 账号
     username: admin
     # 密码
-    password: zhenshuMall0805
+    password: admin
   # 配置
   setting:
     # 是否显示界面中 SwaggerModel 功能
